@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # 1. Ứng dụng Java của bạn
+  app-java:
+    build: . # Tự động build lại từ Dockerfile ở thư mục hiện tại
+    image: hoangquocdieu/demodockerjava:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db-mysql # Chờ Database khởi động xong mới chạy App
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db-mysql:3306/mydb
+
+  # 2. Database MySQL
+  db-mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=mydb
+    ports:
+      - "3307:3306" # Đổi cổng ra ngoài để tránh trùng nếu máy bạn có cài MySQL rồi

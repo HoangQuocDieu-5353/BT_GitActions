@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoàng Quốc Diệu | Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+            background:#020617;
+        }
+
+        header h1{
+            color:#38bdf8;
+        }
+
+        nav a{
+            margin-left:20px;
+            text-decoration:none;
+            color:white;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            height:90vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            flex-direction:column;
+        }
+
+        .hero h2{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+
+        .hero span{
+            color:#38bdf8;
+        }
+
+        .hero p{
+            margin:15px 0;
+            color:#94a3b8;
+        }
+
+        .btn{
+            padding:12px 25px;
+            background:#38bdf8;
+            border:none;
+            border-radius:25px;
+            color:#020617;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#0ea5e9;
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .title{
+            font-size:32px;
+            margin-bottom:30px;
+            color:#38bdf8;
+        }
+
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#020617;
+            padding:25px;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            background:#020617;
+            color:#94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hoàng Quốc Diệu</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h2>Xin chào 👋<br>
+        Tôi là <span>Hoàng Quốc Diệu</span>
+    </h2>
+
+    <p>
+        Backend Developer | Java | Spring Boot
+        Đam mê xây dựng hệ thống web và giải quyết các bài toán phức tạp.
+    </p>
+
+    <button class="btn">Xem dự án</button>
+
+</section>
+
+<section id="about">
+
+    <h2 class="title">Giới thiệu</h2>
+
+    <p>
+        Tôi là một lập trình viên yêu thích xây dựng các hệ thống web hiện đại.
+        Tôi tập trung vào Backend Development với Java, Spring Boot và Database.
+        Ngoài ra tôi cũng thích thiết kế hệ thống, tối ưu hiệu năng và viết code sạch.
+    </p>
+
+</section>
+
+<section id="skills">
+
+    <h2 class="title">Kỹ năng</h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <h3>Java</h3>
+            <p>Lập trình hướng đối tượng, cấu trúc dữ liệu và thuật toán.</p>
+        </div>
+
+        <div class="card">
+            <h3>Spring Boot</h3>
+            <p>Xây dựng REST API, MVC, Spring Security.</p>
+        </div>
+
+        <div class="card">
+            <h3>Database</h3>
+            <p>MySQL, MongoDB, thiết kế database.</p>
+        </div>
+
+        <div class="card">
+            <h3>Git</h3>
+            <p>Quản lý source code và làm việc nhóm.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="title">Dự án</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>IT Recruitment Website</h3>
+            <p>
+                Website tuyển dụng IT với các chức năng:
+                đăng tin tuyển dụng, ứng tuyển, quản lý CV.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Interview Question Hub</h3>
+            <p>
+                Hệ thống chia sẻ câu hỏi phỏng vấn cho developer.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                Website giới thiệu bản thân và các dự án cá nhân.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Hoàng Quốc Diệu | Backend Developer
+
+</footer>
+
+</body>
+</html>
