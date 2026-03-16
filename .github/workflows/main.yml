@@ -21,7 +21,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v7.0.0
         with:
-          context: .
+          context: ./HoangQuocDieu
           push: true
           tags: |
             hoangdieu17012004/spring-boot-app:latest
